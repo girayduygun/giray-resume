@@ -1,0 +1,197 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+    position: relative;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #2e4053;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2e4053;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* QR Code Section */
+.qr-code-section {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+.qr-code-section .qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+.qr-code-section p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10rem;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.language-switcher a img {
+    width: 20px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.language-switcher a.active {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Main content area with two columns */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-column {
+    width: 35%;
+    padding-right: 20px;
+    border-right: 2px solid #eaeaea;
+}
+
+.left-column section {
+    margin-bottom: 20px;
+}
+
+.right-column {
+    width: 60%;
+    padding-left: 20px;
+}
+
+/* Section headings */
+section h2 {
+    font-size: 1.8rem;
+    color: #2e4053;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #2e4053;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 0px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2e4053;
+    color: white;
+    margin-top: 40px;
+    border-top: 2px solid #eaeaea;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design for Tablet and Mobile */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
