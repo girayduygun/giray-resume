@@ -180,6 +180,10 @@ footer p {
         padding: 0;
         border: none;
     }
+    
+    .language-switcher {
+        right: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -193,5 +197,9 @@ footer p {
 
     .contact-info p {
         font-size: 0.9rem;
+    }
+    
+    .language-switcher {
+        right: 1rem;
     }
 }
