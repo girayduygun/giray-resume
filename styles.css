@@ -52,6 +52,10 @@ header p {
     margin-bottom: 10px;
 }
 
+.contact-info-mobile {
+    display: none
+}
+
 .contact-info p {
     margin: 5px 0;
 }
@@ -184,6 +188,17 @@ footer p {
     .language-switcher {
         right: 1rem;
     }
+    
+    .contact-info {
+        display: none
+    }
+
+    .contact-info-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -201,5 +216,16 @@ footer p {
     
     .language-switcher {
         right: 1rem;
+    }
+    
+    .contact-info {
+        display: none
+    }
+
+    .contact-info-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 }
